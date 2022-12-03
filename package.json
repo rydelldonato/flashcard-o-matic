@@ -1,5 +1,6 @@
 {
   "name": "project-flashcards",
+  "homepage": "https://rydelldonato.github.io/flashcard-o-matic",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
