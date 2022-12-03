@@ -15,6 +15,8 @@
     "react-scripts": "4.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "docker:build": "docker image build . -t thinkful-ed/zid-fe-project-flashcards-01-qualified",
     "docker:run": "docker run --rm -it -p 3000:3000 thinkful-ed/zid-fe-project-flashcards-01-qualified",
@@ -26,8 +28,7 @@
     "start:server": "json-server --no-cors ./data/db.json",
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "react-scripts test",
-    "test:solution": "npm run docker:build && npm run docker:test",
-    "deploy": "gh-pages -d build"
+    "test:solution": "npm run docker:build && npm run docker:test"
   },
   "eslintConfig": {
     "extends": "react-app"
