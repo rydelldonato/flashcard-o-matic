@@ -1,6 +1,6 @@
 {
-  "name": "project-flashcards",
   "homepage": "https://rydelldonato.github.io/flashcard-o-matic",
+  "name": "project-flashcards",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,7 +26,8 @@
     "start:server": "json-server --no-cors ./data/db.json",
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "react-scripts test",
-    "test:solution": "npm run docker:build && npm run docker:test"
+    "test:solution": "npm run docker:build && npm run docker:test",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
