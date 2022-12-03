@@ -47,8 +47,8 @@ export default function AddCard() {
       <div style={{ fontSize: "14px" }} className="nav-bar bg-light p-2">
         <span>
           🏠<NavLink to="/">Home</NavLink> /
-          <NavLink to={`/decks/${deckId}`}>{currentDeck.name}</NavLink>
-          <span className="font-weight-light"> / Add Card</span>
+          <NavLink to={`/decks/${deckId}`}>{currentDeck.name}</NavLink> / 
+          <span className="font-weight-light">Add Card</span>
         </span>
       </div>
       <Form
